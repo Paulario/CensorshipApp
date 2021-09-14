@@ -1,0 +1,14 @@
+{
+    "compilerOptions": {
+        "target": "ESNext",
+        "outFile": "scripts/js/main.js",
+        "removeComments": true,
+        "watch": true,
+        "module": "AMD",
+        "baseUrl": "ts"
+    },
+    "files": ["scripts/ts/main.ts"],
+    "exclude": ["node_modules"],
+    "compileOnSave": true
+}
+

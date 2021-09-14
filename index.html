@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet" href="styles/main.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    </head>
+    <body class="min-vh-100 overflow-hidden">
+        <div class="container mt-5">
+            <div class="row justify-content-center m-1">
+                <div class="col-12 col-lg-7 col-md-10 border p-3 bg-white rounded">
+                    <p id="bad-words" class="text-danger">
+                        <span class="fw-bold text-black">Bad words: </span>
+                        <span class="text-danger fs-5">java</span>
+                    </p>
+                    <form name="censorForm">
+                        <div class="hstack mb-4">
+                            <input class="form-control me-2" id="bad-word" name="badWord" type="text" name="badWord" placeholder="enter text here ...">
+                            <input class="btn btn-warning me-2" type="submit" value="Add" name="addWord">
+                            <input class="btn btn-danger" type="reset" value="Reset" name="resetWords">
+                        </div>
+                        <textarea class="form-control mb-2 overflow-auto" name="result" censored style="resize: none; height: 40vh;">java java JAVA JAVASCRIPT</textarea>
+                        <div class="hstack">
+                            <input id="censor" class="form-control btn-success me-2" type="button" value="Cenzor" name="censor">
+                            <button type="button" class="btn-danger form-control w-25 text-center" name="cancel"><i class="fas fa-undo"></i></button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <script src="scripts/js/main.js"></script>
+    </body>
+</html>
